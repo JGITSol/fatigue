@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "fatigue-detection"
+version = "0.1.0"
+description = "AI-powered fatigue detection system"
+authors = ["Your Name <your.email@example.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+gradio = "^3.50"
+loguru = "^0.7.2"
+tensorflow = {version = "==2.15.0", optional = true}
+opencv-python-headless = "^4.8.1"
+opencv-python = "^4.8.1"
+pydantic = "^2.5.3"
+rich = "^13.7.0"
+numpy = "^1.26.3"
+pillow = "^10.1.0"
+
+[tool.poetry.extras]
+gpu = ["tensorflow"]
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

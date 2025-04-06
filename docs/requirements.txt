@@ -1,0 +1,7 @@
+# Documentation and testing requirements
+sphinx>=4.5.0
+sphinx-rtd-theme>=1.0.0
+myst-parser>=0.18.0
+pytest>=7.0.0
+pytest-cov>=4.0.0
+coverage>=6.5.0
